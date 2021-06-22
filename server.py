@@ -6,7 +6,7 @@ import sys
 
 # define host and port
 host = '64.227.27.104'
-port = 5000
+port = 8080
 password = 'Hello321Hello'
 
 
