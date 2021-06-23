@@ -47,13 +47,11 @@ from urllib.parse import urlparse, parse_qs
 class Handler(http.server.SimpleHTTPRequestHandler):
     def do_GET(self):
         query_components = parse_qs(urlparse(self.path).query)
-        msg = query_components["msg"]
+        #msg = query_components["msg"] 
         self.send_response(HTTPStatus.OK)
         self.end_headers()
-        
-        
-        msg = 'Hello! you loser %s' % (msg)
-        self.wfile.write(msg.encode())
+        msg = 'who is joe %s' % ("joe mama")
+        self.wfile.write(msg.encode("utf-8"))
 
 
 port = int(os.getenv('PORT', 80))
