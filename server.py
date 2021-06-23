@@ -2,7 +2,7 @@ import os
 import http.server
 import socketserver
 from http import HTTPStatus
-from urlparse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs
 # import socket
 # import sys
 
